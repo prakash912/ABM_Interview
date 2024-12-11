@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Favicons -->
+        <link rel="icon" type="image/png" sizes="32x32" href="./Assets/Favicon/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./Assets/Favicon/favicon-32x32.png">
+        <link rel="icon" type="image/x-icon" href="./Assets/Favicon/favicon.ico">
+
+        <!-- Font Awesome kit -->
+        <script src="https://kit.fontawesome.com/b60e8d17ed.js" crossorigin="anonymous"></script>
+        
+        <!-- Google Fonts import function -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+        </style>
+
+        <link rel="stylesheet" href="./styles.css" />
+
+        <title>ABM Interview</title>
+    </head>
+    <body>
+        <nav id="nav">
+            <div id="nav-par-flex">
+                <div class="par-anchor">
+                    <a href="#header-html1" class="anchor-nav" id="1anchor-nav1">
+                    HTML-1
+                    </a>
+                </div>
+                <div class="par-anchor">
+                    <a href="#header-html2" class="anchor-nav" id="2anchor-nav2">
+                    HTML-2
+                    </a>
+                </div>
+                <div class="par-anchor">
+                    <a href="#header-html3" class="anchor-nav" id="3anchor-nav3">
+                        HTML-3
+                    </a>
+                </div>
+                <div class="par-anchor">
+                    <a href="#header-css1" class="anchor-nav" id="4anchor-nav4">
+                        CSS-1
+                    </a>
+                </div>
+                <div class="par-anchor">
+                    <a href="#header-css2" class="anchor-nav" id="5anchor-nav5">
+                        CSS-2
+                    </a>
+                </div>
+                <div class="par-anchor">
+                    <a href="#header-css3" class="anchor-nav" id="6anchor-nav6">
+                        CSS-3
+                    </a>
+                </div>
+                <div class="par-anchor">
+                    <a href="#header-css4" class="anchor-nav" id="7anchor-nav7">
+                        CSS-4
+                    </a>
+                </div>
+                <div class="par-anchor">
+                    <a href="#header-css5" class="anchor-nav" id="8anchor-nav8">
+                        CSS-5
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div id="next-nav" style="margin-bottom: 5rem;">
+        </div>
+        <!-- *HTML Level-1 Questions and Answers. Basic level, 7 Questions -->
+        <header class="heading-day" id="header-html1">
+            <h1>
+                HTML Level-1
+            </h1>
+            <br>
+        </header>
+        <section id="section-html1">
+            <h2 class="question" id="que1">Q.1) What is the difference between div tag and span tag?</h2>
+            <div class="answer" id="ans1">
+                <p>
+                    <span class="span-ans">Ans:-</span>
+                    HTML, div along with the span tag seems to be the same but, they are not. The div tag acts as a container for one or multiple elements, media types etc. and is a inline-block element to which we can assign any height and width. The span tag in HTML is a type of semantic tag, which means as the name "span" suggest this tag is used to span or put contenet, element anywhere in HTML document. Inspite this, the span tag is a Inline element due to which the height and width can't be assigned to this tag.
+                </p>
+            </div>    
+            <br>
+            <h2 class="question" id="que2">Q.2) What is the difference between class and ID's?</h2>
+            <div>    
+                <p class="answer" id="ans2">
+                    <span class="span-ans">Ans:-</span>
+                    In HTML, the both the class and ID's are used to identify the elements, such that to which class they belong to and what is their unique ID. This identification and classification helps us to target a specific element much more easily in CSS as well as in JavaScript. The specific difference between these two is that the samr class can be assigned to one or multiple elements, where as a ID is unique for each element and can not be replicated or given to multiple elements. Also there are different CSS selectors for the class and ID. To select an element with class we use "." 
+                    <br>
+                    CSS class selector example:-
+                    <code>.class-name{
+                        CSS-property:value
+                    }
+                    </code>
+                    <br> and to select an element with ID we use "#"
+                    <br>
+                    CSS ID selector example:-
+                    <code>
+                        #ID-name{
+                            CSS-property:value
+                        }
+                    </code>
+                </p>
+            </div>
+            <br>
+            <h2 class="question" id="que3">
+                Q.3) What are self closing tags?
+            </h2>
+            <div class="answer" id="ans3">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                    In HTML, elements are defined by using tags i.e. to use heading elements we have 6 different heading tags ranging form h1 to h6 where h1 the largest heading and h6 being smallest heading. Every element has a opening tag and a closing tag to define a element.Self closing tags are also alternatively known as void tags, empty tags, singletons tags, etc. i.e these tags do not have contents and also can not have any child.
+                    Example of Heading element using h1 tag.
+                </p>
+            <pre>&lt;h1&gt;                 --> opening tag
+    Hello World.
+&lt;/h1&gt;                --> closing tag</pre>
+                <p>
+                    Some elements in HTML do not have a separate closing tags, so there is no need to close them by using a separate closing tags. Such elements are often reffered to as self-closing tags.
+                    <br>
+                    Example of self-closing tags are:- img, br, hr, input, link, meta etc.
+                </p>
+            <pre>&lt;br&gt;                --> no closing tags
+&lt;hr>                --> no closing tags
+&lt;img src="" alt=""&gt; --> no closing tags
+&lt;meta&gt;              --> no closing tags</pre>
+            </div>
+            <br>
+            <h2 class="question" id="que4">
+                Q.4) How many types of headings are there? How to decide which to use where?
+            </h2>
+            <div class="answer" id="ans4">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                    In HTML, Heading tags define the heading. HTML heading tags are important for both users and search engines. When users read a text, a good structure with paragraphs and headings help them orientate themselves. Paragraphs divide the text into smaller chunks, and headings clarify the structure of texts.there are total of 6 types of headings ranging from h1 to h6. h1 being the largest and boldest to, h6 being the smallest. The heading elements are as follows:- h1, h2, h3, h4, h5, h6.
+                    <br>
+                    While deciding where to use which heading following points might help:- 
+                    <br>
+                    <strong>h1:</strong> It should be the main keyword of the landing page in the headline. In shops, for example, this could be the main category. In longer articles, the main keyword is usually the topic of the article.<strong>h2:</strong> The h2 headlines are well suited to secondary keywords or related keywords, or they can be used for longtail keywords or questions. h2 tags can also be used for optimizing for the Google Answer Box. <strong>h3 and h4:</strong> These headings should be used for less important topics. However, can also be used to add keywords to the main topic. <strong>h5 and h6:</strong>These are the smallest headings, mostly not used. 
+                </p>
+            </div>
+            <br>
+            <h2 class="question" id="que5">
+                Q.5) What is the difference between inline and block level elements?
+            </h2>
+            <div class="answer" id="ans5">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                    <strong>Block elements:</strong> They consume the entire width available irrespective of their sufficiency. They always start in a new line and have top and bottom margins. It does not contain any other elements next to it.
+                </p>
+                <br>
+                <p>
+                     Examples of Block elements:
+                </p>
+                <pre>&lt;h1&gt;-&lt;h6&gt;
+    &lt;div&gt; 
+    &lt;hr&gt;</pre>
+                <p>
+                    <strong>Inline elements:</strong> Inline elements occupy only enough width that is sufficient to it and allows other elements next to it which are inline. Inline elements don’t start from a new line and don’t have top and bottom margins as block elements have.
+                    <br>
+                    Examples of Inline elements:
+                </p>
+                <pre>&lt;a&gt;
+    &lt;br&gt;  
+    &lt;script&g    t;
+    &lt;input&gt    ;</pre>
+                </div>
+            <br>
+            <h2 class="question" id="que6">
+                Q.6) What is the difference between em and strong?
+            </h2>
+            <div class="answer" id="ans6">
+                <p>
+                    <span class="span-ans">
+                            Ans:-</span>
+                    In HTML, strong tag is used to specify the importance, seriousness, or urgency of the text used inside it. Contents of strong tags are rendered in bold by browsers. The
+                    <code>
+                        &lt;strong&gt;
+                    </code> 
+                    element is for content that is of greater importance, while the
+                    <code>
+                        &lt;b&gt;</code>
+                    element is used to draw attention to text without indicating that it's more important.
+                    <br>
+                    Similarly we have a em tag which is used to stress emphasis on a word or words of a sentence, perticular sentense or a part of sentense; with intent to affect the meaning of that sentence. Although the visual effects are same, however the semantic meaning is different between the
+                    <code>
+                        &lt;em&gt;</code>
+                    and
+                    <code>
+                        &lt;i&gt;</code>
+                    which is used to epresents text that is set off from the normal prose, such a foreign word, fictional character thoughts, or when the text refers to the definition of a word instead of representing its semantic meaning.
+                </p>
+            </div>
+            <br>
+            <h2 class="question" id="que7">
+                Q.7) What are Attributes?
+            </h2>
+            <div class="answer" id="ans7">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                    In HTML, attributes are the special words placed inside the opening tags and used to define the characteristics of an HTML element. The HTML attributes contain two parts <code>attribute name</code> and its <code>value</code>. The attribute pairs (<code>attribute_name</code>, <code>attribute_value</code>) are separated using equal (<code>=</code>) operator. The attribute value is closed inside double quotes (<code>” “</code>). The name parameter takes the name of the property we would like to assign to  the element and the value takes the properties value or extent of the property names that can be aligned over the element. Every name has some value that must be written within quotes. Further attributes are categoriesed based on their functionalities such as <strong>Content attributes, IDL attributes, Boolean attributes and Event attributes</strong>. In short attributes can be seen as the properites for the elements.
+                </p>
+                <pre>Syntax=> &lt;element attribute_name="attribute_value">&lt;/element&gt;</pre>
+                <p>
+                    Examples of attributes are:
+                </p>
+                <pre>&lt;img src=""
+         alt=""
+         id=""
+         class=""
+         style=""&gt;</pre>
+            </div>
+            <br>
+            <hr>
+        </section>
+
+        <!-- *HTML Level-2 Questions and Answers. Intermediate level, 7 Questions-->
+        <header class="heading-day" id="header-html2">
+            <h1>
+                HTML Level-2
+            </h1>
+            <br>
+        </header>
+        <section id="section-html2">
+            <h2 class="question" id="que8">
+                Q.1) What is the difference between HTML tags and elements?
+            </h2>
+            <div class="answer" id="ans8">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                    In HTML, tags are the building blocks of a page. Tags tell the browser how it should display content to the user as it consists of a reserverd  keywords that have a unique meanings. Tags usually exist in pairs consisting of a starting and an ending tag. However, some tags do not have a closing tag.A tag starts with a <code>&gt;</code> bracket and ends with a <code>&lt;</code> bracket. Most tags exist in pairs in HTML. Tags have an opening and closing part. They are similar, except the closing part has a <code>/</code> sign after the opening bracket.
+                    <br>
+                    Elements consists of a generalized component that user wants to display on their HTML page. An element is like the meaningful entity that includes an openning tag, some content and a closing tag. If there is no content in an element, it is called an Empty HTML Element. Also, HTML Elements can be nested. There can be an element with another element as its content.
+                </p>    
+                    <pre>       Tags:                               Elements:
+
+Opening tag: &lt;TagName&gt;            &lt;p&gt;         --> openning tag
+Closing tag: &lt;/TagName&gt;               Text    --> content
+                                  &lt;/p&gt;        --> closing tag</pre>
+            </div>
+            <br>
+            <h2 class="question" id="que9">
+                Q.2) Explain br tag.
+            </h2>
+            <div class="answer" id="ans9">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                    In HTML, br tag is used to produces a line break in text (carriage-return). It is useful for writing a poem or an address, where the division of lines is significant. The text after the br tag begins again at the start of the next line of the text block.
+                    <br>
+                    <pre>Syntax=> 
+        &lt;br/&gt;</pre>
+                </p>
+            </div>
+            <br>
+            <h2 class="question" id="que10">
+                Q.3) How many different types of lists we have in HTML?
+            </h2>
+            <div class="answer" id="ans10">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                    A list is a record of short pieces of related information or used to display the data or any information on web pages in the ordered or unordered form. For instance, to purchase the items, we need to prepare a list that can either be ordered or unordered list which helps us to organize the data & easy to find the item.In HTML, there are total 3 types of lists available.
+                    <br>
+                    <ol type="1">
+                        <li>
+                            <b>Ordered list</b> defined with <code>&lt;ol&gt;</code> tag. It's used to sort items in ordered manner by using either numbers, alphabets or roman numbers(numbers are used as default).
+                        </li>
+                        <li>
+                            <b>Un-ordered list</b> defined with <code>&lt;ul&gt;</code> tag. It's used to arrange items in un-ordered manner by using symbols such as disk, square, circle or none.
+                        </li>
+                        <li>
+                            <b>Descriptive list</b> defined with <code>&lt;dl&gt;</code> tag. It is a list of terms, with a description of each term. The <code>&lt;dl&gt;</code> tag defines the description list, the <code>&lt;dt&gt;</code> tag defines the term name, and the <code>&lt;dd&gt;</code>tag describes each term.
+                        </li>
+                    </ol>
+                </p>
+                <pre>   Ordered list:        Un-ordered lists:        Descriptive list:
+
+   &lt;ol&gt;                  &lt;ul&gt;                     &lt;dl&gt;
+       &lt;li>&lt;/li&gt;             &lt;li>&lt;/li&gt;               &lt;dt&gt;
+       &lt;li>&lt;/li&gt;             &lt;li>&lt;/li&gt;                   &lt;dd&gt;&lt;/dd&gt;
+       &lt;li>&lt;/li&gt;             &lt;li>&lt;/li&gt;               &lt;/dt&gt;
+   &lt;/ol&gt;                 &lt;/ul&gt;                   &lt;/dl></pre>
+            </div>
+            <br>
+            <h2 class="question" id="que11">
+                Q.4) What are semantic tags in HTML?
+            </h2>
+            <div class="answer" id="ans11">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                    In HTML, semantic tags refers to the tags that provide meaning to the HTML page rather than just presentation. It makes HTML more comprehensible by better defining the different sections and layout of web pages. A semantic element clearly describes its meaning to both the browser and the developer. Semantic tags have many advantages over non-semantic tags like the semantic HTML tags help the search engines and other user devices to determine the importance and context of web pages, pages made with semantic elements are much easier to read, it has greater accessibility, offers a better user experience, semantic tags are also of great help to screen readers, and finally they also help in code optimization.
+                </p>
+                <br>
+                <p>
+                    The following HTML tags can be used to break your page into identified parts:
+                </p>
+                <ul style="list-style-type: disc;">
+                    <li>
+                        <code>
+                            &lt;header&gt;</code> : It defines a header for a web page.
+                    </li>
+                    <li>
+                        <code>
+                            &lt;nav&gt;</code> : It defines a container for navigation links.
+                    </li>
+                    <li>
+                        <code>
+                            &lt;section&gt;</code> : This defines a section in a web page.
+                    </li>
+                    <li>
+                        <code>
+                            &lt;article&gt;</code> : This element contains the main part, containing information about the web page.
+                    </li>
+                    <li>
+                        <code>
+                            &lt;aside&gt;</code> : It is often placed as a sidebar in a document.
+                    </li>
+                    <li>
+                        <code>
+                            &lt;footer&gt;</code> : It defines a footer for a document or a section.
+                    </li>
+                </ul>
+            </div>
+            <br>
+            <h2 class="question" id="que12">
+                Q.5) Write code to create an ordered list with roman numbers.
+            </h2>
+            <div class="answer" id="ans12">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                </p>
+                <pre>&lt;ol type="I"&gt;
+    &lt;li&gt;
+        Item-1
+    &lt;/li&gt;
+    &lt;li&gt;
+        Item-2
+    &lt;/li&gt;
+    &lt;li&gt;
+        Item-3
+    &lt;/li&gt;
+&lt;/ol&gt;</pre>
+            </div>
+            <br>
+            <h2 class="question" id="que13">
+                Q.6) Write code to create an unordered list with circle.
+            </h2>
+            <div class="answer" id="ans13">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                </p>
+                <pre>&lt;ul style="list-style-type: circle;"&gt;
+    &lt;li&gt;
+        Item-1
+    &lt;/li&gt;
+    &lt;li&gt;
+        Item-2
+    &lt;/li&gt;
+    &lt;li&gt;
+        Item-3
+    &lt;/li&gt;
+&lt;/ul&gt;</pre>
+            </div>
+            <br>
+            <h2 class="question" id="que14">
+                Q.7) Write code to create a link to https://www.prepbytes.com
+            </h2>
+            <div class="answer" id="ans14">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                </p>
+                <pre>&lt;a href="https://prepbytes.com">
+    Click here to go to www.Prepbytes.com
+&lt;/a&gt;</pre>
+            </div>
+            <br>
+            <hr>
+        </section>
+
+        <!-- *HTML Level-3 Questions and Answers. Intermediate level, 4 Questions**************************************-->
+        <header class="heading-day" id="header-html3">
+            <h1>
+                HTML Level-3
+            </h1>
+            <br>
+        </header>
+        <section id="section-html3">
+            <h2 class="question" id="que15">
+                Q.1) Write a code to insert an image.
+            </h2>
+            <div class="answer" id="ans15">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                </p>
+                <pre>&lt;img src="https://www.pexels.com/photo/red-concrete-brick-259915/" alt="Alternate text."&gt;</pre>
+            </div>
+            <br>
+            <h2 class="question" id="que16">
+                Q.2) Create a form that contains input fields like name, age, email and contact.
+            </h2>
+            <div class="answer" id="ans16">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                </p>
+                <form id="day3-form">
+                    <label for="name">
+                        Name: 
+                    </label>
+                    <input type="text" name="name" id="name" maxlength="25" placeholder="Enter your Name." required size="15">
+                    <br>
+                    <br>
+                    <label for="age">
+                        Age: 
+                    </label>
+                    <input type="number" name="age" id="age" min="1" max="100" minlength="25" placeholder="Enter your Age." style="width: 125px;">
+                    <br>
+                    <br>
+                    <label for="email">
+                        Email: 
+                    </label>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email Id." size="15">
+                    <br>
+                    <br>
+                    <label for="contact">
+                        Contact Number: 
+                    </label>
+                    <input type="tel" name="contact" id="contact" placeholder="Enter your Contact number.">
+                    <br>
+                    <br>
+                    <input type="submit" name="submit" id="submit" >
+                </form>
+            </div>
+            <br>
+            <br>
+            <h2 class="question" id="que17">
+                Q.3) Create a table and explain how to acheive colspan.
+            </h2>
+            <div class="answer" id="ans17">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                </p>
+                <table class="day3-table" id="table1" border="1">
+                    <caption>Table without colspan:</caption>
+                    <tr class="tr" id="tr1">
+                        <th id="th1">
+                            Heading-1
+                        </th>
+                        <th id="th2">
+                            Heading-2
+                        </th>
+                        <th id="th3">
+                            Heading-3
+                        </th>
+                        <th id="th4">
+                            Heading-4
+                        </th>
+                    </tr>
+                    <tr class="tr" id="tr2">
+                        <td id="td1.1">
+                            td-content-1
+                        </td>
+                        <td id="td1.2">
+                            td-content-2
+                        </td>
+                        <td id="td1.3">
+                            td-content-3
+                        </td>
+                        <td id="td1.4">
+                            td-content-4
+                        </td>
+                    </tr>
+                    <tr class="tr" id="tr3">
+                        <td id="td1.5">
+                            Lorem.
+                        </td>
+                        <td id="td1.6">
+                            Lorem, ipsum.
+                        </td>
+                        <td id="td1.7">
+                            Lorem, ipsum dolor.
+                        </td>
+                        <td id="td1.8">
+                            Lorem ipsum dolor sit.
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <p>
+                    In HTML, we use rowspan attribute to make a cell span more than one row. Rowspan attribute accepts a unitless numerical value, which equals to the number of rows we wanna span. As compared to preceding table, the following table has implementation of rowspan attribute in it's 2nd row of 1st and 3rd column by specifying attribute <code>rowspan="2"</code> .
+                </p>
+                <br>
+                <table class="day3-table" id="table2" border="1">
+                    <caption>With colspan:</caption>
+                    <tr class="tr" id="tr1">
+                        <th id="th2.1">
+                            Heading-1
+                        </th>
+                        <th id="th2.2">
+                            Heading-2
+                        </th>
+                        <th id="th2.3">
+                            Heading-3
+                        </th>
+                        <th id="th2.4">
+                            Heading-4
+                        </th>
+                    </tr>
+                    <tr class="tr" id="tr2">
+                        <td id="td2.1" rowspan="2">
+                            td-content-1
+                        </td>
+                        <td id="td2.2">
+                            td-content-2
+                        </td>
+                        <td id="td2.3" rowspan="2">
+                            Lorem, ipsum dolor.
+                        </td>
+                        <td id="td2.4">
+                            td-content-4
+                        </td>
+                    </tr>
+                    <tr class="tr" id="tr3">
+                        <!-- <td id="td2.5">
+                            Lorem.
+                        </td> -->
+                        <td id="td2.6">
+                            Lorem, ipsum.
+                        </td>
+                        <!-- <td id="td2.7">
+                            Lorem, ipsum dolor.
+                        </td> -->
+                        <td id="td2.8">
+                            Lorem ipsum dolor sit.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <h2 class="question" id="que18">
+                Q.4) Create a radio button (MERN, MEAN : course) and checkbox (HTML, CSS, React, Node : technology) and explain the difference between these two 
+            </h2>
+            <div class="answer" id="ans18">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                    In HTML, radio button and checkbox are the input-type elements, elements through which user provides input. The main difference between radio button and checkbox is that out of multiple available options, with use of radio button user can select only and only one option and with the use of checkbox user can select one or multiple available options. These input elements are primaraly used in HTML forms.
+                </p><pre><form>    <h4 class="h4-ans18">Course : </h4>       <h4 class="h4-ans18">Technology : </h4>
+    <input type="radio" name="course" id="MERN" value="MERN"><label for="MERN" style="line-height: 1.5em;">MERN</label>           <input type="checkbox" name="HTML" id="HTML" value="HTML"><label for="HTML">HTML</label>
+    <input type="radio" name="course" id="MEAN" value="MEAN"><!-- Use of label for radin button increases the button clickable area. --><label for="MEAN">MEAN</label>           <input type="checkbox" name="CSS" id="CSS" value="CSS"><label for="CSS">CSS</label>
+                     <input type="checkbox" name="React" id="React" value="React"><label for="React">React</label>
+                     <input type="checkbox" name="Node" id="Node" value="Node"><label for="Node">Node</label></form></pre>
+            </div>
+            <br>
+            <hr>
+        </section>
+
+        <!-- *CSS Level-1 Questions and Answers. Basic to Intermediate level, 7 Questions****************************************************-->
+        <header class="heading-day" id="header-css1">
+            <h1>
+                CSS Level-1
+            </h1>
+            <br>
+        </header>
+        <section id="section-css1">
+            <h2 class="question" id="que19">
+                Q.1) What is the difference between flex row and flex column?
+            </h2>
+            <div class="answer" id="ans19">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                    In CSS, flex property is used to define a flexible display to an element(mostly divs). Flex consist of two entities parent flex container and its child flex items and the <code>display: flex</code> property is applied to parent flex container. Then, we have flex row and flex column as property values for <code>flex-direction:</code> property. Basically, <code>flex-direction: row</code> renderes all child flex items in row format i.e. horizontaly on X-axis of a page; whereas <code>flex-direction: column</code> renderes all child flex items in column format i.e. verticaly on Y-axis of a page.
+                </p>
+                <div id="top-par-flex">
+                    <div class="mid-par-flex" id="mid-par-flex1">
+                        <code style="line-height: 2em;">
+                            flex-direction: row</code>
+                        <div class="low-par-flex" id="low-par-flex1">
+                            <div class="low-div" id="low-div1">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, sapiente?
+                            </div>
+                            <div class="low-div" id="low-div2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, sapiente?
+                            </div>
+                            <div class="low-div" id="low-div3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, sapiente?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mid-par-flex" id="mid-par-flex2">
+                        <code style="line-height: 2em;">
+                            flex-direction: column</code>
+                        <div class="low-par-flex" id="low-par-flex2">
+                            <div class="low-div" id="low-div1">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, sapiente?
+                        </div>
+                            <div class="low-div" id="low-div2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, sapiente?
+                            </div>
+                            <div class="low-div" id="low-div3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, sapiente?
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h2 class="question" id="que20">
+                Q.2) Explain inline , internal and external stylesheets.
+            </h2>
+            <div class="answer" id="ans20">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                    Cascading Style Sheet(CSS) is used to set the style in web pages that contain HTML elements. It sets the background color, font-size,   font-family, color, … etc. property of elements on a web page. There exists 3 ways in CSS can be applied to a HTML page which are as follows:
+                    <p class="div-list" style="margin-left: 3rem; margin-top:1rem; line-height: 1.3em;">
+                        <b>1. Inline CSS:</b> It contains the CSS property in the body section attached with element is known as inline CSS. This kind of style is specified within an HTML tag using the style attribute.
+                        <br>
+                        <b>2. Internal or Embeded CSS:</b> This can be used when a single HTML document must be styled uniquely. The CSS rule set should be within the HTML file in the head section i.e the CSS is embedded within the HTML file.
+                        <br>
+                        <b>3. External CSS:</b> External CSS contains separate CSS file which contains only style property with the help of tag attributes (For example class, id, heading, … etc). CSS property written in a separate file which has a .css extension should be linked to the HTML document using link tag. This means that for each element, style can be set only once and that will be applied across web.
+                    </p>
+                </p>
+            </div>
+            <br>
+            <h2 class="question" id="que21">
+                Q.3) Justify-content allows you to do what?
+            </h2>
+            <div class="answer" id="ans21">
+            <p>
+                <span class="span-ans">
+                    Ans:-</span>
+                In CSS, <code>justify-content</code> property defines how the browser distributes space between and around content items along the main-axis of a flex container, and the inline axis of a grid container. The alignment is done after the lengths and auto margins are applied, meaning that, if in a Flexbox layout there is at least one flexible element, with flex-grow different from 0, it will have no effect as there won't be any available space.
+            </p>
+                <br>
+                <p>
+                    Following are some of the values for justify-content property.
+                </p>
+                <ul style="list-style-type: disc; ">
+                    <li>
+                        <code>
+                            start</code> : The items are packed along with each other toward the start edge of the alignment container on the main axis.
+                    </li>
+                    <li>
+                        <code>
+                            end</code> : The items are packed along with each other toward the end edge of the alignment container on the main axis.
+                    </li>
+                    <li>
+                        <code>
+                            center</code> : The items are packed along with each other at the center of the alignment container along the main axis.
+                    </li>
+                    <li>
+                        <code>
+                            spcae-between</code> : The items are evenly distributed within the alignment container along the main axis. The spacing between each pair of adjacent items is the same. The first item is with the main-start edge, and the last item is with the main-end edge.
+                    </li>
+                    <li>
+                        <code>
+                            space-around</code> : The items are evenly distributed within the alignment container along the main axis. The spacing between each pair of adjacent items is same. The empty space before the first and after the last item equals half of the space between each pair of adjacent items.
+                    </li>
+                    <li>
+                        <code>
+                            space-evenly</code> : The items are evenly distributed within the alignment container along the main axis. The spacing between each pair of adjacent items, the main-start edge and the first item, and the main-end edge and the last item, are all exactly the same.
+                    </li>
+                </ul>
+            </div>
+            <br>
+            <h2 class="question" id="que22">
+                Q.4) What is the difference between absolute and relative positioning?
+            </h2>
+            <div class="answer" id="ans22">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                    Every single element on a web page is a block, iterally a rectangle of pixels. To design a website with complex layouts the use of  <code>position:</code> property is required to alter the typical documnet flow and override default browser styling. The position property has five values in total: <code>static</code>, <code>relative</code>, <code>absolute</code>, <code>fixed</code> and <code>sticky</code> . ALso other position specifying properties and values such as <code>top:</code>, <code>bottom:</code>, <code>left:</code>, <code>right:</code> are required in accordance with above position property.
+                    <br>
+                    <br>
+                    <code>position: relative;</code> changes the position of the element relative to the parent element and relative to itself and where it would usually be in the regular document flow of the page. This means that it's relative to its original position within the parent element. This  property value moves the tag based on where it currently is, relative to its usual place and relative to its surrounding tags without affecting their layout. Any element that is a child of the relatively positioned element can be absolutely positioned within that block.
+                    <br>
+                    <br>
+                    <code>position: absolute;</code> Absolute-positioned elements are completely taken out of the regular flow of the web page. They are not    positioned based on their usual place in the document flow, but based on the position of their ancestor. This property value moves the tag irrespective of where it's currently positioned this allows to to literally place any page element exactly where we want it to be. The trade-off about absolute positioning is that these elements are removed from the flow of elements on the page. An element with this type of positioning is not affected by other elements and it doesn’t affect other elements.
+                </p>
+            </div>
+            <br>
+            <h2 class="question" id="que23">
+                Q.5) What is grid-template-columns used for?
+            </h2>
+            <div class="answer" id="ans23">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                    In CSS, <code>grid-template-columns:</code> is a property associated with grid layouts. This property determines the the number (and the widths) of columns in a grid layout. The values are a space separated list, where each value specifies the size of the respective column.
+                </p>
+                <pre>Syntax=> grid-template-columns: none|auto|max-content|min-content|length|initial|inherit;</pre>
+                <p style="margin-left: 2rem; margin-top: 1rem;">
+                    Offsets for the property are:
+                </p> 
+                <ul style="list-style-type: disc; ">
+                    <li>
+                        <code>
+                            none</code> : Default value. Columns are created if needed.
+                    </li>
+                    <li>
+                        <code>
+                            auto</code> : The size of the columns is determined by the size of the container and on the size ofthe content of the items in the column.
+                    </li>
+                    <li>
+                        <code>
+                            max-content</code> : Sets the size of each column to depend on the largest item in the column
+                    </li>
+                    <li>
+                        <code>
+                            min-content</code> : Sets the size of each column to depend on the smallest item in the column
+                    </li>
+                    <li>
+                        <code>
+                            length</code> : Sets the size of the columns, by using a legal length value.
+                    </li>
+                </ul>
+            </div>
+            <br>
+            <h2 class="question" id="que24">
+                Q.6) What is the z-index in CSS?
+            </h2>
+            <div class="answer" id="ans24">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                    In CSS, the z-index property specifies the stack order of an element on the z-axis of a page. An element with greater stack order(z-index value) always gets rendered in front of an element with a lower stack order. z-index only works on positioned elements (<code>position: absolute</code>, <code>position: relative</code>, <code>position: fixed</code>, or <code>position: sticky</code>) and flex items (elements that are direct children of display:flex elements). If two positioned elements overlap without a z-index specified, the element positioned last in the HTML code will be shown on top.
+                </p>
+                <pre>Syntax=> z-index: auto|number|initial|inherit;</pre>
+                <p style="margin-left: 2rem; margin-top: 1rem;">
+                    Offsets for the property are:
+                </p>
+                <ul style="list-style-type: disc; ">
+                    <li>
+                        <code>
+                            auto</code> : Sets the stack order equal to its parents. This is default.
+                    </li>
+                    <li>
+                        <code>
+                            number</code> : Sets the stack order of the element. Negative numbers are allowed.
+                    </li>
+                    <li>
+                        <code>
+                            initial</code> : Sets this property to its default value.
+                    </li>
+                    <li>
+                        <code>
+                            inherit</code> : Inherits this property from its parent element.
+                    </li>
+                </ul>
+            </div>
+            <br>
+            <h2 class="question" id="que25">
+                Q.7) What is the difference between padding and margin?
+            </h2>
+            <div class="answer" id="ans25">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                    In CSS, both padding and margin are the properties of box model. Every element can be described in box model layout.
+                    <br>
+                    <br>
+                    <b>Margin:</b> It is the space around an element i.e. the space outside of an element. It is the space between an element and the elements around it. Margins are used to move an element up or down on a page as well as left or right. Margin is completely transparent, and it does not have any background color. It clears the area around the element. Each side of the element has a margin size you can change individually. In creating the gap, the margin pushes adjacent elements away. It can be negative or any float number or it can also be set to auto.
+                    <br>
+                    <br>
+                    <b>Padding:</b> It is the space between the element and the related content inside it. It determines how elements look and sit within a container. It also shows the container background around the element in it. Padding can be affected by background colors as it clears the area around the content. To create the gap, it either grows the element size or shrinks the content inside. By default, the size of the element increases.
+                    <br>    
+                </p>
+            </div>
+            <br>
+            <hr>
+        </section>
+
+         <!-- *CSS Level-2 Questions and Answers. Intermediate level, 6 Questions**********************************************-->
+         <header class="heading-day" id="header-css2">
+            <h1>
+                CSS Level-2
+            </h1>
+            <br>
+        </header>
+        <section id="section-css2">
+            <h2 class="question" id="que26">
+                Q. 1) What is box sizing?
+            </h2>
+            <div class="answer" id="ans26">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                    In CSS, <code>box-sizing:</code> property allows us to include the padding and border in an element's total width and height. By default in the CSS box model, the width and height that's assigned to an element is applied only to the element's <b>content box</b>. If the element has any border or padding, this is then added to the width and height to arrive at the size of the box that's rendered on the screen.
+                    <br>
+                    &emsp;&emsp;&emsp;width + padding + border = actual width of an element
+                    <br>
+                    &emsp;&emsp;&emsp;height + padding + border = actual height of an element
+                    <br>
+                    <br>
+                    Following are the values for <code>box-sizing:</code> property:
+                </p>
+                <ul style="list-style-type: disc;">
+                    <li>
+                        <code>
+                            content-box</code> : This is the initial and default value as specified by the CSS standard. The <code>width</code> and<co>height</code> properties include the content, but does not include the padding, border, or margin.
+                    </li>
+                    <li>
+                        <code>
+                            border-box</code> : The <code>width</code> and <code>height</code> properties include the content, padding, and border, but doesnot include the margin as padding and border will be inside of the box.
+                    </li>
+                </ul>
+            </div>
+            <br>
+            <h2 class="question" id="que27">
+                Q. 2) What is animation delay?
+            </h2>
+            <div class="answer" id="ans27">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                    In CSS, <code>animation-delay:</code> property specifies the amount of time to wait from applying the animation to an element before beginning to perform the animation. The animation can start later, immediately from its beginning, or immediately and partway through the animation. The animation-delay value can be defined in seconds (s) or milliseconds (ms).
+                </p>
+                <pre>Syntax=> animation-delay: time|initial|inherit;</pre>
+                <p style="margin-left: 2rem; margin-top: 1rem;">
+                    Offsets for the property are:
+                </p>
+                <ul style="list-style-type: disc;">
+                    <li>
+                        <code>
+                            time</code> : Defines the number of seconds (s) or milliseconds (ms) to wait before the animationwill start. Default value is 0. Negative values are allowed. If you use negative values, theanimation will start as if it had already been playing for N seconds/milliseconds. A positive valueindicates that the animation should begin after the specified amount of time has elapsed. A value of 0s, which is the default, indicates that the animation should begin as soon as it's applied.
+                    </li>
+                    <li>
+                        <code>
+                            initial</code> : Sets this property to its default value which is 0.
+                    </li>
+                    <li>
+                        <code>
+                            inherit</code> : Inherits this property from its parent element.
+                    </li>
+                </ul>
+            </div>
+            <br>
+            <h2 class="question" id="que28">
+                Q. 3) Which property you will use to merge cells vertically in grid?
+            </h2>
+            <div class="answer" id="ans28">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                    In CSS,
+                </p>
+            </div>
+            <br>
+            <h2 class="question" id="que29">
+                Q. 4) Which property you will use to merge cells horizontally in grid?
+            </h2>
+            <div class="answer" id="ans29">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                    In CSS,
+                </p>
+            </div>
+            <br>
+            <h2 class="question" id="que30">
+                Q. 5) Explain CSS box model.
+                 
+            </h2>
+            <div class="answer" id="ans30">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                    In CSS, the term "box model" is used when talking about design and layout. When laying out a webpage, the browser's rendering engine represents each HTML element as a rectangular box according to the standard CSS basic box model. CSS determines the size, position, and properties (color, background, border size, etc.) of these boxes. Every box is composed of four parts (or areas), defined by their respective edges: the content edge, padding edge, border edge, and margin edge.
+                </p>
+                <pre style="width: 30rem; height: 16rem; margin-left: 5rem; margin-top: 1.5rem;
+            ">Margin<pre style="width: 80%; height: 70%; margin: 0.4rem auto;border: 5px solid rgb(129, 105, 149);">Border<pre style="width: 65%; height: 55%; margin: 0.4rem auto; border: 5px dashed rgb(129, 105, 149);">Padding<pre style="width: 50%;height: 20%;margin: 0.4rem auto; border: 5px groove rgb(129, 105, 149);">     Content</pre></pre></pre></pre>
+                <div class="div-css2" id="div-ans30">
+                    <h3>
+                        Content Area: 
+                    </h3>
+                    <P>
+                        The content area, bounded by the content's edge, contains the "real" content of the element, such as text, an image, or a video player. Its dimensions are the content width (or content-box width) and the content height (or content-box height). When the <code>box-sizing</code>property is set to content-box (default) and the element is a block element, the content area's size can be explicitly defined with the<code>width</code>, <code>min-width</code>, <code>max-width</code>, <code>height</code>, <code>min-height</code>, and <code>max-height</code> properties.
+                    </P>
+                    <h3>
+                        Padding Area: 
+                    </h3>
+                    <P>
+                        The padding area, bounded by the padding edge, extends the content area to include the element's padding. This area is actually the space around the content area and within the border-box. Its dimensions are the padding-box width and the padding-box height. The thickness of the padding is determined by the <code>padding-top</code>, <code>padding-right</code>, <code>padding-bottom</code>, <code>padding-left</code>, and shorthand <code>padding</code> properties.
+                    </P>
+                    <h3>
+                        Border Area: 
+                    </h3>
+                    <P>
+                        The border area, bounded by the border edge, extends the padding area to include the element's borders. It is the area between the box’s padding and margin. Its dimensions are the border-box width and the border-box height. The thickness of the borders are determined by the <code>border-width</code> property. If the <code>box-sizing</code> property is set to <code>border-box</code>, the border area's size can be explicitly defined with the <code>width</code>, <code>min-width</code>, <code>max-width</code>, <code>height</code>, <code>min-height</code>, and <code>max-height</code> properties. When there is a background (<code>background-color</code> or <code>background-image</code>) set on a box, it extends to the outer edge of the border (i.e. extends underneath the border in z-ordering). This default behavior can be altered with the <code>background-clip</code> CSS property.
+                    </P>
+                    <h3>
+                        Margin Area: 
+                    </h3>
+                    <P>
+                        The margin area, bounded by the margin edge, extends the border area to include an empty area used to separate the element from its     neighbors. This area consists of space between border and margin Its dimensions are the margin-box width and the margin-box height. The size of the margin area is determined by the <code>margin-top</code>, <code>margin-right</code>, <code>margin-bottom</code>, <cod>margin-left</code>, and shorthand <code>margin</code> properties. When margin collapsing occurs, the margin area is not clearly defined since margins are shared between boxes.
+                    </P>
+                </div>
+            </div>
+            <br>
+            <h2 class="question" id="que31">
+                Q. 6) what is the difference between display none and visibility hidden?
+            </h2>
+            <div class="answer" id="ans31">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                    In CSS, <code>display: none;</code> and <code>visibility: hidden;</code> both of these properties are different and are used to hide the elements on webpage. But the way they do is completely different as <code>display: none</code> property is type of display property with value as <code>: none;</code> which not only hides but also removes the space which element occupies on a webpage as if it was not written in HTML document in the first place, which disturbes the rest of the element flow on page. Whreas the visibility property with value <code>: hidden;</code> makes the element invisible by making it transparent so our eyes cannot see, but it does occupies space on and its position on webpage unlike when using <code>display: hidden;</code> property, which does not disturbes the elements flow.    
+                </p>
+            </div>
+            <br>
+            <hr>
+        </section>
+        
+        <!-- *CSS Level-3 Questions and Answers. Advanced level, 6 Questions-->
+         <header class="heading-day" id="header-css3">
+            <h1>
+                CSS Level-3
+            </h1>
+            <br>
+        </header>
+        <section id="section-css3">
+            <h2 class="question" id="que32">
+                Q. 1) Replicate the button of PrepBytes.
+            </h2>
+            <div class="answer" id="ans32">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                </p>
+                <div class="div-css3" id="div-ans32">
+                    <button>Know More</button>
+                </div>
+                <br>
+            </div>
+            <h2 class="question" id="que33">
+                Q. 2) Write a text and add any google font.
+            </h2>
+            <div class="answer" id="ans33">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                </p>    
+                <p style="font-family: 'Poor Story', cursive; display: inline-block; margin-top: 1rem; text-indent: 2rem;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos vero, quis omnis praesentium maxime esse illum tempora qui. Laudantium, omnis alias eum blanditiis saepe a reiciendis explicabo totam necessitatibus. Obcaecati possimus adipisci assumenda dolorem mollitia aliquam, dolorum asperiores at quae necessitatibus quisquam sunt nesciunt neque recusandae voluptatum vel eligendi tempora error delectus odit. Incidunt quos eveniet, voluptate hic officia, exercitationem voluptatem quia nam tempore a velit explicabo saepe vitae asperiores.
+                </p>
+                <pre>font-family: 'Poor Story'; cursive;</pre>
+            </div>
+            <br>
+            <h2 class="question" id="que34">
+                Q. 3) Create a box and increase its width on hover , add transition on hover.
+            </h2>
+            <div  class="answer" id="ans34">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                </p>
+                <div class="div-css3" id="div-ans34">
+                    BOX
+                </div>
+                <pre>Code=>
+            on :hover;
+    transform: scaleX(150%);
+    transition: all 1s ease-in-out 0s;</pre>
+            </div>
+            <br>
+            <h2 class="question" id="que35">
+                Q. 4) Create a circle using border radius.
+            </h2>
+            <div class="answer" id="ans35">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                </p>
+                <div class="div-css3" id="div-ans35"></div>
+                <pre>Code=>
+    border-radius: 50%;</pre>
+            </div>
+            <br>
+            <h2 class="question" id="que36">
+                Q. 5) Write code to show implementation of media queries.
+            </h2>
+            <div class="answer" id="ans36">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                    In CSS, a media query is used to apply a set of styles based on the browser's characteristics including width, height, or screen resolution. The <code>@media</code>  is a type of At-rule in CSS. These rules will dictate what the CSS will look like based on certain conditions. The media type refers to the category of media for the device. The different media types include <code>all</code>, <code>print</code>, <code>screen</code> and <code>speech</code>. In the below code example a (max-width: 600px) for the media query exissts which tells the computer to target devices with a screen width of 600px and less and changes the background styles for the body to <code>background-color: #87ceeb;</code> .
+                    <!-- TODO 320px-480px: Mobile devices
+                    TODO 481px-768px: iPads, Tablets
+                    TODO 769px-1024px: Small screens, laptops
+                    TODO 1025px-1200px: Desktops, large screens
+                    TODO 1201px-above: Extra large screens, TV -->
+                </p>
+                <pre>@media only screen and (max-width: 480px){
+    /*Styles go here*/
+    body {
+        background-color: #87ceeb;
+    }
+}</pre>
+            </div>
+            <br>
+            <h2 class="question" id="que37">
+                Q. 6) Write code to show any animation example.
+            </h2>
+            <div class="answer" id="ans37">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                </p>
+                <div class="par-flex " id="par-flex">
+                    <div class="child-flex div-css3" id="child-flex1">
+                        <pre >Code=>
+    &lt;div style="width: 250px;height: 250px;border: 3px solid rgb(129 105 149);
+    border-radius: 15px;"&gt;
+        &lt;div style="width: 25%;height: 20%;background-color: darkturquoise;
+        border: 2px solid azure;border-radius: 10px;
+        animation: box-move 4s ease-in-out infinite forwards normal;
+        text-align: center;"&gt;
+            Box
+        &lt;div&gt;
+    &lt;div&gt;
+
+CSS Code=>
+
+    @keyframes box-move {
+        0% {
+            transform: translateX(0);
+        }
+
+        25% {
+            transform: translateX(280%) rotate(-180deg);
+        }
+
+        50% {
+            transform: translateX(280%) translateY(358%) rotate(-360deg);
+        }
+
+        75% {
+            transform: translateY(357%) rotate(181deg);
+        }
+    }</pre>
+                    </div>
+                    <div class="child-flex" id="child-flex2 ">
+                        <div id="par-anim" >
+                            <div id="child-anim" >
+                                Box
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr>
+        </section>
+        
+        <!-- *CSS Level-4 Questions and Answers. Advance level, 5 Questions-->
+         <header class="heading-day" id="header-css4">
+            <h1>
+                CSS Level-4
+            </h1>
+            <br>
+        </header>
+        <section id="section-css4">
+            <h2 class="question" id="que38">
+                Q. 1) Create masterhead - add background image and put a text at the center , with button below it.
+            </h2>
+            <div class="answer" id="ans38">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                </p>
+                <div class="div-css4" id="masterhead">
+                    <button>
+                        Button
+                    </button>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </div>
+            </div>
+            <br>
+            <h2 class="question" id="que39">
+                Q. 2) Create header -- left side will have logo and right side will have 4 button.
+            </h2>
+            <div class="answer" id="ans39">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                </p>
+                <div id="div-ans39">
+                    <div id="logo-ans39">
+                        <img src="./Assets/Icons/Camel-Icon.png" alt="Icon" />
+                    </div>
+                    <div id="buttons">
+                        <button>Button-1</button>
+                        <button>Button-2</button>
+                        <button>Button-3</button>
+                        <button>Button-4</button>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h2 class="question" id="que40">
+                Q. 3) Create 3 cards of height & width 200 px with texts in it , the card should be horizontally placed in web view and vertically in mobile view.
+            </h2>
+            <div class="answer" id="ans40">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                </p>
+                <div id="div-ans40">
+                    <div class="card-ans40">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea fuga nam corporis est omnis officiis iure unde, natus dolores a illo temporibus optio quae. Esse officia tempore optio autem explicabo.</div>
+                    <div class="card-ans40">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aut, doloribus labore enim magnam quos accusamus. Qui blanditiis error tempore delectus nulla id consectetur minus fugiat ad. Corporis, omnis inventore?</div>
+                    <div class="card-ans40">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum in aspernatur veritatis, aut, eveniet nobis ipsa, ab delectus dolor eaque minus accusantium explicabo possimus debitis! Totam quo similique ad nisi.</div>
+                </div>
+            </div>
+            <br>
+            <h2 class="question" id="que41">
+                Q. 4) Create a button like Login and SignUp button of Prepbytes website. "If mobile : buttons color should be green and they should be below each other. If iPad : buttons color should be red and they should be below each other. If desktop : buttons color should be blue and they should be side-by-side each other"
+            </h2>
+            <div class="answer" id="ans41">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                </p>
+                <div id="div-ans41">
+                    <button class="button-ans41" id="button1-ans41">
+                        Login
+                    </button>
+                    <button class="button-ans41" id="button2-ans41">
+                        Signup
+                    </button>
+                </div> 
+            </div>
+            <br>
+            <h2 class="question" id="que42">
+                Q. 5) Write code to show implementation of flex.
+            </h2>
+            <div class="answer" id="ans42">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                </p>
+                    
+            </div>
+            <br>
+            <hr>
+        </section>
+
+        <!-- *CSS Level-5 Questions and Answers. Advance level, 5 Questions*****************************-->
+        <header class="heading-day" id="header-css5">
+            <h1>
+                CSS Level-5
+            </h1>
+            <br>
+        </header>
+        <section id="section-css5">
+            <h2 class="question" id="que43">
+                Q. 1) Show implementation of transition.
+            </h2>
+            <div class="answer" id="ans43">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                </p>
+                <div id="div-ans43">
+                    Box-1
+                </div>
+            </div>
+            <br>
+            <h2 class="question" id="que44">
+                Q. 2) Show implementation of transformation.
+            </h2>
+            <div class="answer" id="ans44">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                </p>
+                <div id="ans44-par-flex">
+                    <div class="ans44-child-flex" id="ans44-box1">
+                        Box-1
+                    </div>
+                    <div class="ans44-child-flex" id="ans44-box2">
+                        Box-2
+                    </div>
+                    <div class="ans44-child-flex" id="ans44-box3">
+                        Box-3
+                    </div>
+                    <div class="ans44-child-flex" id="ans44-box4">
+                        Box-4
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h2 class="question" id="que45">
+                Q. 3) Show implementation of grid.
+            </h2>
+            <div class="answer" id="ans45">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                </p>
+                <div id="ans45-par-grid">
+                    <div class="ans45-child-grid" id="ans45-grid1">
+                        Grid-1
+                    </div>
+                    <div class="ans45-child-grid" id="ans45-grid2">
+                        Grid-2
+                    </div>
+                    <div class="ans45-child-grid" id="ans45-grid3">
+                        Grid-3
+                    </div>
+                    <div class="ans45-child-grid" id="ans45-grid4">
+                        Grid-4
+                    </div>
+                    <div class="ans45-child-grid" id="ans45-grid5">
+                        Grid-5
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h2 class="question" id="que46">
+                Q. 4) What are CSS combinators.
+            </h2>
+            <div class="answer" id="ans46">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                    In CSS, a CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinators as they combine other selectors in a way that gives them a useful relationship to each other and the location of content in the document.
+                    <br>
+                    There are four types of combinators available in CSS:
+                </p>
+                <ul style="list-style-type: disc;">
+                    <li class="ans46-list">
+                        <b>Descendant Combinator : </b>These are represented by a single space (<code> </code>) character. It combines two selectors such that elements matched by the second selector are selected if they have an ancestor (parent, parent's parent, parent's parent's parent, etc.) element matching the first selector.Basically, this selector is used to select all the child elements of the specified tag. Selectors that utilize a descendant combinator are called descendant selectors
+                    </li>
+                    <li class="ans46-list">
+                        <b>Child Combinator : </b>These are represented by (<code>&gt;</code>) character placed between two CSS selectors. It matches only those elements matched by the second selector that are the direct children of elements matched by the first. Descendant elements further down the hierarchy don't match. 
+                    </li>
+                    <li class="ans46-list">
+                        <b>Adjecent Sibling Combinator : </b>These are represented by (<code>+</code>) character placed between two CSS selectors. It matches only those elements matched by the second selector that are the next sibling element of the first selector. Basically, it's used to select an element that is directly after another specific element. Sibling elements must have the same parent element, and "adjacent" means "immediately following".
+                    </li>
+                    <li class="ans46-list">
+                        <b>General sibling combinator : </b>These are represented by (<code>~</code>) character placed between two CSS selectors.  It's used to select the element that follows the first selector element and also share the same parent as the first selector element. This can be used to select a group of elements that share the same parent element.
+                    </li>
+                </ul>
+            </div>
+            <br>
+            <h2 class="question" id="que47">
+                Q. 5) What are pseudo selectors in CSS.
+            </h2>
+            <div class="answer" id="ans47">
+                <p>
+                    <span class="span-ans">
+                        Ans:-</span>
+                    In CSS, a Pseudo class is a keyword which can be added to slector that's used to define the special state of an element. It can be combined with a CSS selector to add an effect to existing elements based on their states.
+                </p>
+                <pre>selector: pseudo-class{
+    property: value;
+}</pre>
+                <p>
+                    There are many Pseudo classes in CSS but the ones which are most commonly used are as follows:
+                </p>
+                <ul style="list-style-type: disc;">
+                    <li class="ans47-list">
+                        <code>
+                            :hover</code> : This pseudo-class is used to add special effect to an element when our mouse pointer is over it.
+                    </li>
+                    <li class="ans47-list">
+                        <code>
+                            :active</code> : This pseudo-class is used to select an element which is activated when the user clicks on it.
+                    </li>
+                    <li class="ans47-list">
+                        <code>
+                            :focus</code> : This pseudo-class is used to select an element which is currently focused by the user. It works on user input elements used in forms and is triggered as soon as the user clicks on it.
+                    </li>
+                    <li class="ans47-list">
+                        <code>
+                            :visited</code> : This pseudo-class is used to select the links which have been already visited by the user.
+                    </li>
+                </ul>
+            </div>
+            <br>
+        </section>
+    </body>
+</html>
